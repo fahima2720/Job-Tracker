@@ -4,71 +4,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Job Application Tracker</title>
-
-  <!-- Tailwind + DaisyUI -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link
-    href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
-    rel="stylesheet"
-    type="text/css"
-  />
 </head>
 
-<body class="bg-gray-100 min-h-screen">
-  <div class="max-w-7xl mx-auto p-4">
+<body class="bg-slate-50 min-h-screen">
+  <div class="max-w-5xl mx-auto p-4">
 
-    <!-- Dashboard Header -->
-    <h1 class="text-2xl font-bold mb-4">Job Application Tracker</h1>
+    <h1 class="text-xl font-semibold mb-4">Job Application Tracker</h1>
 
-    <!-- Dashboard Cards -->
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-      <div class="card bg-white shadow">
-        <div class="card-body">
-          <p class="text-gray-500">Total Jobs</p>
-          <h2 id="totalCount" class="text-3xl font-bold">8</h2>
-        </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+      <div class="bg-white border rounded p-4">
+        <p class="text-sm text-gray-500">Total</p>
+        <p id="totalCount" class="text-2xl font-semibold">0</p>
       </div>
-
-      <div class="card bg-white shadow">
-        <div class="card-body">
-          <p class="text-gray-500">Interview</p>
-          <h2 id="interviewCount" class="text-3xl font-bold text-green-600">0</h2>
-        </div>
+      <div class="bg-white border rounded p-4">
+        <p class="text-sm text-gray-500">Interview</p>
+        <p id="interviewCount" class="text-2xl font-semibold text-green-600">0</p>
       </div>
-
-      <div class="card bg-white shadow">
-        <div class="card-body">
-          <p class="text-gray-500">Rejected</p>
-          <h2 id="rejectedCount" class="text-3xl font-bold text-red-600">0</h2>
-        </div>
+      <div class="bg-white border rounded p-4">
+        <p class="text-sm text-gray-500">Rejected</p>
+        <p id="rejectedCount" class="text-2xl font-semibold text-red-500">0</p>
       </div>
     </div>
 
-    <!-- Available Jobs Header -->
-    <div class="flex justify-between items-center mb-3">
-      <h2 class="text-xl font-semibold">Available Jobs</h2>
-      <p id="tabJobCount" class="text-gray-500 text-sm">8 Jobs</p>
+    <div class="flex justify-between items-center mb-2">
+      <h2 class="font-medium">Available Jobs</h2>
+      <span id="tabCount" class="text-sm text-gray-500">0 jobs</span>
     </div>
 
-    <!-- Tabs -->
-    <div class="tabs tabs-boxed mb-4">
-      <a class="tab tab-active" data-tab="all">All</a>
-      <a class="tab" data-tab="interview">Interview</a>
-      <a class="tab" data-tab="rejected">Rejected</a>
+    <div class="flex gap-2 mb-4">
+      <button onclick="setTab('all')" class="bg-blue-600 text-white px-3 py-1 text-sm rounded">All</button>
+      <button onclick="setTab('interview')" class="bg-gray-200 px-3 py-1 text-sm rounded">Interview</button>
+      <button onclick="setTab('rejected')" class="bg-gray-200 px-3 py-1 text-sm rounded">Rejected</button>
     </div>
 
-    <!-- Job Cards Container -->
-    <div id="jobContainer" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+    <div id="jobContainer"></div>
 
-    <!-- Empty State -->
     <div id="emptyState" class="hidden text-center py-16">
-      <img src="jobs.png" class="w-20 mx-auto mb-4" />
-      <h3 class="text-lg font-semibold">No jobs available</h3>
-      <p class="text-gray-500">Check back later for new opportunities</p>
+      <img src="https://cdn-icons-png.flaticon.com/512/4076/4076503.png" class="w-16 mx-auto mb-4">
+      <h3 class="font-semibold">No jobs available</h3>
+      <p class="text-gray-500 text-sm">Check back later for new opportunities</p>
     </div>
 
   </div>
 
-  <script src="script/job.js"></script>
+  <script src="/script/job.js"></script>
 </body>
 </html>
