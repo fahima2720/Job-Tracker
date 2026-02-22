@@ -19,4 +19,4 @@ It is useful because, It reduces the number of event listeners. It improves perf
 
 ### 5. What is the difference between preventDefault() and stopPropagation() methods?
 ans: preventDefault() stops the default browser behavior.
-stopPropagation() stops the event from moving upward in the DOM
+stopPropagation() stops the event from moving upward in the DOM 
