@@ -1,14 +1,21 @@
 let activeTab = "all";
 
 let jobs = [
-  {id:1, company:"Mobile First Corp", position:"React Native Developer", meta:"Remote · Full-time · $130,000 - $175,000", desc:"Build cross-platform mobile applications using React Native.", status:"all"},
-  {id:2, company:"WebFlow Agency", position:"Web Designer & Developer", meta:"Los Angeles · Part-time · $80,000 - $120,000", desc:"Create stunning web experiences for high-profile clients.", status:"all"},
-  {id:3, company:"DataViz Solutions", position:"Data Visualization Specialist", meta:"Boston · Full-time · $125,000 - $165,000", desc:"Transform complex data into insightful visualizations.", status:"all"},
-  {id:4, company:"CloudFirst Inc", position:"Backend Developer", meta:"Remote · Full-time · $110,000 - $150,000", desc:"Build scalable backend systems with Node.js.", status:"all"},
-  {id:5, company:"Innovate Labs", position:"UI/UX Designer", meta:"Austin · Contract · $90,000 - $130,000", desc:"Design user-friendly interfaces for SaaS products.", status:"all"},
-  {id:6, company:"TechNova", position:"Frontend Engineer", meta:"Remote · Full-time · $100,000 - $140,000", desc:"Implement modern frontend architectures.", status:"all"},
-  {id:7, company:"FinEdge", position:"QA Engineer", meta:"Berlin · Full-time · $70,000 - $100,000", desc:"Ensure product quality through testing.", status:"all"},
-  {id:8, company:"StartupX", position:"Product Manager", meta:"Remote · Full-time · $120,000 - $160,000", desc:"Lead product strategy and execution.", status:"all"}
+  {id:1, company:"Mobile First Corp", position:"React Native Developer", meta:"Remote · Full-time · $130,000 - $175,000", desc:"Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.", status:"all"},
+
+  {id:2, company:"WebFlow Agency", position:"Web Designer & Developer", meta:"Los Angeles · Part-time · $80,000 - $120,000", desc:"Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.", status:"all"},
+
+  {id:3, company:"DataViz Solutions", position:"Data Visualization Specialist", meta:"Boston,MA · Full-time · $125,000 - $165,000", desc:"Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.", status:"all"},
+
+  {id:4, company:"CloudFirst Inc", position:"Backend Developer", meta:"Seattle, W/A · Full-time · $110,000 - $150,000", desc:"Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.", status:"all"},
+
+  {id:5, company:"Innovate Labs", position:"UI/UX Engineer", meta:"Austin,TX · Full-time · $110,000 - $150,000", desc:"Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.", status:"all"},
+
+  {id:6, company:"MegaCorp Solutions", position:"JavaScript Developer", meta:"New York, NY · Full-time · $130,000 - $170,000", desc:"Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.", status:"all"},
+
+  {id:7, company:"StartupXYZ", position:"Full Stack Engineer", meta:"Remote · Full-time · $120,000 - $160,000", desc:"Ensure product quality through testing.", status:"all"},
+
+  {id:8, company:"TechCorp Industries", position:"Senior Frontend Developer", meta:"San Francisco, CA· Full-time · $130,000 - $175,000", desc:"We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.", status:"all"}
 ];
 
 function setTab(tab){
